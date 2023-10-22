@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="">
   <head>
     <style>
       * {
         font-family: Arial, Helvetica, sans-serif;
       }
+      body {
+        margin: 0;
+      }
 
       .section {
         display: flex;
         justify-content: center;
-        background-color: orange;
+        flex-direction: column;
+        padding: 50px 100px;
+      }
+
+      .section.odd {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        flex-direction: column;
+      }
+
+      .section.even {
+        display: flex;
+        justify-content: center;
+        background-color: #ffd580;
         flex-direction: column;
       }
 
@@ -114,40 +131,228 @@
       .demo:hover {
         opacity: 1;
       }
+
+      .topbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: orange;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .topbar-item {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .topbar-item:hover {
+        background-color: #222;
+      }
     </style>
   </head>
 
   <body>
-    <div class="section">
-      <h1>Feel The Learn</h1>
+    <ul class="topbar">
+      <li><a href="#home" class="topbar-item">Home</a></li>
+      <li><a href="#about" class="topbar-item">About Us</a></li>
+      <li><a href="#pricing" class="topbar-item">Pricing</a></li>
+      <li><a href="#testimonials" class="topbar-item">Testimonials</a></li>
+      <li><a href="#tutors" class="topbar-item">Our Tutors</a></li>
+      <li>
+        <a href="#contact" class="topbar-item">Contact Us and Book a Session</a>
+      </li>
+    </ul>
 
-      <h2>Navigation Bar with links to 'Student Section', 'Tutor Section'.</h2>
-      <p>Contact details including links to whatsapp and phone immediately.</p>
-      <a href="https://wa.me/27849004561"
-        >Contact us on WhatsApp today
-        <img
-          class="contact-button"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
-        />
-      </a>
+    <div id="home" class="section odd">
+      <h1></h1>
+      <h1>Feel The Learn</h1>
+      <center><img src="images/FTL logo.png" style="width: 20%"/></center>
+      
+    </div>
+
+    <div id="about" class="section even">
+     
+      <h2>About Us</h2>
       <p>
-        We provide the best tutoring services in Cape Town! Our tutors are all
-        vetted, with years of experience and excellent reputations. They are top
-        performers in their fields and are passionate and enthusiastic teachers.
+        Welcome to Feel the Learn! Founded by two dedicated University of Cape
+        Town students, our mission is to transform the way mathematics is
+        learned and understood. With over 5 years of tutoring experience, our
+        founder brings a wealth of knowledge to our team.
+      </p>
+      <p>
+        At [Your Math Tutoring], we specialize in mathematics because we believe
+        it's a subject that requires careful and thoughtful teaching. We
+        prioritize building a strong foundation of fundamental concepts and
+        understanding rather than rote memorization.
+      </p>
+      <p>
+        Our team of tutors consists of current university students pursuing a
+        range of degrees, ensuring they remain deeply immersed in the world of
+        learning. With previous tutoring experience and exceptional academic
+        achievements, our tutors are committed to helping students unlock their
+        full potential in mathematics. Join us on a journey to master math
+        through comprehensive understanding, and let us guide you towards
+        success!
       </p>
     </div>
 
-    <div class="section">
-      <h2>Our Students</h2>
-      <p>this is the Slide show of the students as well as their testimonials.</p>
+    <div id="pricing" class="section odd">
+      <h2>Pricing</h2>
+      <p>
+        At Feel the Learn, we offer pricing that's not only competitive but also
+        provides exceptional value for your math learning needs:
+      </p>
+      <ol>
+        <li>
+          <b>Two-Hour Sessions:</b> We understand that one hour can sometimes be
+          too short to dive deep into the complexities of mathematics. That's
+          why we exclusively offer two-hour tutoring sessions, ensuring ample
+          time for comprehensive learning and problem-solving.
+        </li>
+        <li>
+          <b>Session Rate:</b> Our pricing is straightforward and competitive.
+          We charge R250 per hour, totaling R500 for a two-hour session to
+          provide you with the best value for your investment in your education.
+        </li>
+        <li>
+          <b>Travel Fee (if applicable):</b> For students residing outside the
+          main Cape Town area, a nominal petrol/travel fee may apply. This fee
+          helps compensate our dedicated tutors for their travel time and
+          expenses while ensuring that quality tutoring is accessible to
+          everyone.
+        </li>
+      </ol>
     </div>
 
-    <div class="section">
+    <div id="testimonials" class="section even">
+      <h2>Testimonials</h2>
+      <p>text...</p>
+    </div>
+
+    <div id="tutors" class="section odd">
       <h2>Our Tutors</h2>
       <p>Slide show of tutors as well as brief intro.</p>
-      <h2 style="text-align: center">Slideshow Gallery</h2>
+      <p style="text-align: center">Slideshow Gallery</p>
 
-      <div class="container">
+      <div>
+        <p>
+          "I am currently pursuing a Bachelor of Science in Astrophysics and
+          Physics. My post-university plan is to work as a lecturer. What I
+          appreciate about tutoring is the opportunity to teach individuals
+          valuable problem-solving skills, guiding them in honing their
+          abilities. The satisfaction of knowing that you've contributed to
+          someone's growth and development is what I truly cherish."
+        </p>
+        <h3>- Mduduzi</h3>
+      </div>
+
+      <div>
+        <p>
+          ""I am in my first year of a BSc in Computer Science and Computer
+          Engineering at UCT. After completing my degree, I plan to leverage the
+          technical expertise, problem-solving, and innovative thinking gained
+          during my degree to contribute to societal betterment. I aim to stay
+          adaptable in this ever-evolving tech landscape, while keeping ethical
+          considerations and environmental sustainability in mind. I like
+          helping others learn, as I have a genuine passion for education and
+          enjoy helping students understand and master concepts. I also find it
+          satisfactory to witness learners improving academically."
+        </p>
+        <h3>- Karabo</h3>
+      </div>
+
+      <div>
+        <p>
+          "I am presently pursuing a Bachelor of Science in Pure and Applied
+          Mathematics. My future plan involves becoming a lecturer at UCT. What
+          truly brings me joy is sharing my knowledge with others and knowing
+          that I've played a part in helping someone gain a deeper
+          understanding."
+        </p>
+        <h3>- Qaasim</h3>
+      </div>
+
+      <div>
+        <p>
+          "I'm currently in my first year of Mechatronics Engineering. My
+          aspiration is to find a job that offers both financial stability and
+          personal enjoyment. I also have a passion for sharing my knowledge and
+          working with others to tackle challenging problems."
+        </p>
+        <h3>- Olwethu</h3>
+      </div>
+    </div>
+
+    <div id="contact" class="section even">
+      <h2>Contact Us and Book a Session</h2>
+      <p>Contact details including links to whatsapp and phone immediately.</p>
+
+      <p>
+        Ready to take the next step in your math journey? Contact us today and
+        book a session! We're eager to hear from you. Please let us know your
+        availability and any specific topics or areas you'd like to focus on.
+        We'll work together to find the perfect time for your tutoring session.
+        0849004561
+        <a
+          href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
+          >Contact us on WhatsApp today
+          <img
+            class="contact-button"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
+        /></a>
+
+        current email address:
+        <a
+          href="mailto:tutor.feelthelearn@gmail.com?subject=Interested%20in%20Tutoring"
+          >tutor.feelthelearn@gmail.com</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
+
+<!-- <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script> -->
+
+<!-- <div class="container">
         <div class="mySlides">
           <div class="numbertext">1 / 6</div>
           <img src="banana.jpeg" style="width: 100%" />
@@ -241,42 +446,4 @@
             />
           </div>
         </div>
-      </div>
-    </div>
-
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-      }
-    </script>
-  </body>
-</html>
+      </div> -->
