@@ -45,7 +45,7 @@
         box-sizing: border-box;
       }
 
-      img {
+      .tutor {
         vertical-align: middle;
       }
 
@@ -56,8 +56,10 @@
 
       /* Hide the images by default */
       .mySlides {
-        display: none;
-      }
+
+
+}
+
 
       /* Add a pointer when hovering over the thumbnail images */
       .cursor {
@@ -119,7 +121,7 @@
       /* Six columns side by side */
       .column {
         float: left;
-        width: 16.66%;
+        width: 25%;
       }
 
       /* Add a transparency effect for thumnbail images */
@@ -184,7 +186,7 @@
         founder brings a wealth of knowledge to our team.
       </p>
       <p>
-        At [Your Math Tutoring], we specialize in mathematics because we believe
+        At Feel The Learn, we specialize in mathematics because we believe
         it's a subject that requires careful and thoughtful teaching. We
         prioritize building a strong foundation of fundamental concepts and
         understanding rather than rote memorization.
@@ -241,27 +243,41 @@
 
       <div class="container">
         <div class="mySlides">
-          <div class="numbertext">Karabo</div>
-          <img src="images/Karabo.jpeg" style="width: 500px" />
+          <div><img src="images/Karabo.jpeg" style="width: 50%" class="tutor" /></div>
+          <!-- <div><p>Karabo</p></div> -->
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="images/Cropped_3l4_Mduduzi.jpeg" style="width: 500px" />
+          
+          <img
+            src="images/Cropped_3l4_Mduduzi.jpeg"
+            style="width: 50%"
+            class="tutor"
+          />
+          <!-- <p>Karabo</p> -->
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="images/Cropped_3l4_Olwethu.jpeg" style="width: 500px" />
+          
+          <img
+            src="images/Cropped_3l4_Olwethu.jpeg"
+            style="width: 50%"
+            class="tutor"
+          />
+          <!-- <p>Karabo</p> -->
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="images/Cropped_3l4_Qaasim.jpeg" style="width: 500px" />
+          <img
+            src="images/Cropped_3l4_Qaasim.jpeg"
+            style="width: 50%"
+            class="tutor"
+          />
+          <!-- <p>Karabo</p> -->
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+        <!-- <a class="next" onclick="plusSlides(1)">❯</a> -->
 
         <div class="caption-container">
           <p id="caption"></p>
@@ -307,19 +323,7 @@
         </div>
       </div>
 
-      <div>
-        <p>
-          "I am currently pursuing a Bachelor of Science in Astrophysics and
-          Physics. My post-university plan is to work as a lecturer. What I
-          appreciate about tutoring is the opportunity to teach individuals
-          valuable problem-solving skills, guiding them in honing their
-          abilities. The satisfaction of knowing that you've contributed to
-          someone's growth and development is what I truly cherish."
-        </p>
-        <h3>- Mduduzi</h3>
-      </div>
-
-      <div>
+      <div class="bio">
         <p>
           "I am in my first year of a BSc in Computer Science and Computer
           Engineering at UCT. After completing my degree, I plan to leverage the
@@ -331,10 +335,33 @@
           enjoy helping students understand and master concepts. I also find it
           satisfactory to witness learners improving academically."
         </p>
-        <h3>- Karabo</h3>
+        <h3>Karabo</h3>
       </div>
 
-      <div>
+      <div class="bio">
+        <p>
+          "I am currently pursuing a Bachelor of Science in Astrophysics and
+          Physics. My post-university plan is to work as a lecturer. What I
+          appreciate about tutoring is the opportunity to teach individuals
+          valuable problem-solving skills, guiding them in honing their
+          abilities. The satisfaction of knowing that you've contributed to
+          someone's growth and development is what I truly cherish."
+        </p>
+        <h3>Mduduzi</h3>
+      </div>
+
+      <div class="bio">
+        <p>
+          "I'm currently in my first year of Mechatronics Engineering. My
+          aspiration is to find a job that offers both financial stability and
+          personal enjoyment. I also have a passion for sharing my knowledge and
+          working with others to tackle challenging problems."
+        </p>
+        <h3>Olwethu</h3>
+      </div>
+
+
+      <div class="bio">
         <p>
           "I am presently pursuing a Bachelor of Science in Pure and Applied
           Mathematics. My future plan involves becoming a lecturer at UCT. What
@@ -342,18 +369,9 @@
           that I've played a part in helping someone gain a deeper
           understanding."
         </p>
-        <h3>- Qaasim</h3>
+        <h3>Qaasim</h3>
       </div>
 
-      <div>
-        <p>
-          "I'm currently in my first year of Mechatronics Engineering. My
-          aspiration is to find a job that offers both financial stability and
-          personal enjoyment. I also have a passion for sharing my knowledge and
-          working with others to tackle challenging problems."
-        </p>
-        <h3>- Olwethu</h3>
-      </div>
     </div>
 
     <div id="contact" class="section even">
@@ -399,6 +417,7 @@
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("demo");
         let captionText = document.getElementById("caption");
+        let bios = document.getElementsByClassName("bio");
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -407,11 +426,13 @@
         }
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
+          bios[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
+        bios[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
       }
