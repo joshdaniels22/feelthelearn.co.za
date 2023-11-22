@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <ul class="topbar">
-      <li><a href="#home" class="topbar-item">Home</a></li>
-      <li><a href="#about" class="topbar-item">About Us</a></li>
-      <li><a href="#pricing" class="topbar-item">Pricing</a></li>
-      <li><a href="#testimonials" class="topbar-item">Testimonials</a></li>
-      <li><a href="#tutors" class="topbar-item">Our Tutors</a></li>
-      <li>
-        <a href="#contact" class="topbar-item">Contact Us and Book a Session</a>
-      </li>
-    </ul>
+    <div class="topbar">
+      <ul class="top-bar-items">
+        <li><a href="#home" class="topbar-item">Home</a></li>
+        <li><a href="#about" class="topbar-item">About Us</a></li>
+        <li><a href="#pricing" class="topbar-item">Pricing</a></li>
+        <li><a href="#testimonials" class="topbar-item">Testimonials</a></li>
+        <li><a href="#tutors" class="topbar-item">Our Tutors</a></li>
+        <li>
+          <a href="#contact" class="topbar-item"
+            >Contact Us and Book a Session</a
+          >
+        </li>
+      </ul>
+    </div>
 
-    <div id="home" class="section odd">
-      <h1></h1>
-      <h1>Feel The Learn</h1>
-      <center><img src="images/FTL_Logo.png" style="width: 20%" /></center>
+    <h1></h1>
+
+    <div id="home" class="section top">
+      <div class="top-left">
+        <h1>Feel The Learn</h1>
+        <p style="width: 300px">
+          Where we help elevate students to their full academic potential.
+        </p>
+      </div>
+      <img src="images/FTL_Logo.png" style="width: 30%" class="top-right" />
     </div>
 
     <div id="about" class="section even">
@@ -53,14 +69,14 @@
         At Feel the Learn, we offer pricing that's not only competitive but also
         provides exceptional value for your math learning needs:
       </p>
-      <ol>
-        <li>
+      <ul style="list-style-type: none;">
+        <li style="margin-bottom: 20px;">
           <b>Two-Hour Sessions:</b> We understand that one hour can sometimes be
           too short to dive deep into the complexities of mathematics. That's
           why we exclusively offer two-hour tutoring sessions, ensuring ample
           time for comprehensive learning and problem-solving.
         </li>
-        <li>
+        <li style="margin-bottom: 20px;">
           <b>Session Rate:</b> Our pricing is straightforward and competitive.
           We charge R250 per hour, totaling R500 for a two-hour session to
           provide you with the best value for your investment in your education.
@@ -72,53 +88,50 @@
           expenses while ensuring that quality tutoring is accessible to
           everyone.
         </li>
-      </ol>
+      </ul>
     </div>
 
     <div id="testimonials" class="section even">
       <h2>Testimonials</h2>
-      <p>text...</p>
+      <p>loading...</p>
     </div>
 
     <div id="tutors" class="section odd">
-      <h2>Our Tutors</h2>
-      <p>Slide show of tutors as well as brief intro.</p>
-      <p style="text-align: center">Slideshow Gallery</p>
-      <h2 style="text-align: center">Slideshow Gallery</h2>
+      <h2 style="margin-bottom: 50px;">Our Tutors</h2>
 
       <div class="container">
         <div class="mySlides">
-          <div>
+          <!-- <div>
             <img src="images/Karabo.jpeg" style="width: 50%" class="tutor" />
-          </div>
+          </div> -->
           <!-- <div><p>Karabo</p></div> -->
         </div>
 
         <div class="mySlides">
-          <img
+          <!-- <img
             src="images/Cropped_3l4_Mduduzi.jpeg"
             style="width: 50%"
             class="tutor"
           />
-          <!-- <p>Karabo</p> -->
+          <p>Karabo</p> -->
         </div>
 
         <div class="mySlides">
-          <img
+          <!-- <img
             src="images/Cropped_3l4_Olwethu.jpeg"
             style="width: 50%"
             class="tutor"
           />
-          <!-- <p>Karabo</p> -->
+          <p>Karabo</p> -->
         </div>
 
         <div class="mySlides">
-          <img
+          <!-- <img
             src="images/Cropped_3l4_Qaasim.jpeg"
             style="width: 50%"
             class="tutor"
           />
-          <!-- <p>Karabo</p> -->
+          <p>Karabo</p> -->
         </div>
 
         <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
@@ -219,66 +232,44 @@
 
     <div id="contact" class="section even">
       <h2>Contact Us and Book a Session</h2>
-      <p>Contact details including links to whatsapp and phone immediately.</p>
 
       <p>
         Ready to take the next step in your math journey? Contact us today and
         book a session! We're eager to hear from you. Please let us know your
         availability and any specific topics or areas you'd like to focus on.
         We'll work together to find the perfect time for your tutoring session.
-        0849004561
-        <a
-          href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
-          >Contact us on WhatsApp today
-          <img
-            class="contact-button"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
-        /></a>
-
-        current email address:
-        <a
-          href="mailto:tutor.feelthelearn@gmail.com?subject=Interested%20in%20Tutoring"
-          >tutor.feelthelearn@gmail.com</a
-        >
       </p>
+
+      <ul style="list-style-type: none;     padding-left: 0; ">
+        <li>Call us on <a href="tel:0849004561">0849004561</a></li>
+        <li style="display: flex; align-items: center">
+          <p style="margin-right: 5px;">Contact us on</p>
+          <a
+            style="margin-right: 5px"
+            href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
+            >  WhatsApp
+          </a>
+          <a
+            class="contact-button"
+            href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
+          >
+            <img
+              style="width: 32px"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
+          /></a>
+        </li>
+
+        <li>
+          Email us at
+          <a
+            style="display: inline"
+            href="mailto:tutor.feelthelearn@gmail.com?subject=Interested%20in%20Tutoring"
+            >tutor.feelthelearn@gmail.com</a
+          >
+        </li>
+      </ul>
     </div>
 
-    <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        let bios = document.getElementsByClassName("bio");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          bios[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        bios[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

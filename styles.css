@@ -3,7 +3,10 @@ html {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Bebas Neue', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 body {
   margin: 0;
@@ -16,11 +19,38 @@ body {
   padding: 50px 100px;
 }
 
+.section.top {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  flex-direction: row;
+  text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+  /* padding-bottom: 0;
+  padding-top: 0; */ 
+}
+
+.top-right {
+  /* text-align: right; */
+  margin: 0;
+  padding: 0;
+  border-radius: 20%;
+
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section.odd {
   display: flex;
   justify-content: center;
   background-color: white;
   flex-direction: column;
+  text-align: left;
 }
 
 .section.even {
@@ -28,17 +58,19 @@ body {
   justify-content: center;
   background-color: #ffd580;
   flex-direction: column;
+  text-align: left;
 }
 
-.section > * {
+/* .section > .odd {
   text-align: center;
-}
+} */
 
 .contact-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 32px;
+  /* vertical-align: ; */
 }
 
 * {
@@ -55,8 +87,9 @@ body {
 }
 
 /* Hide the images by default */
-.mySlides {
-}
+/* .mySlides > img {
+  display: none;
+} */
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -132,20 +165,42 @@ body {
 }
 
 .topbar {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin: 0;
   padding: 0;
+width: 100%;
+position: fixed;
+top: 0;
+background-color: orange;
+overflow: hidden;
+list-style-type: none;
+
+}
+
+.top-bar-items {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+width: 90%;
+  list-style-type: none;
+
   overflow: hidden;
   background-color: orange;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+
+  /* width: 100%; */
 }
 
 .topbar-item {
   float: left;
   display: block;
   color: white;
+  font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
