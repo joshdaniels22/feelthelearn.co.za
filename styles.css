@@ -274,7 +274,7 @@ body {
   text-decoration:underline;
 }
 
-.blue-contact-button {
+.call-contact-button {
   border: none;
 
   width: 200px;
@@ -288,12 +288,25 @@ body {
   margin-bottom: 10px;
 }
 
-.green-contact-button {
+.whatsapp-contact-button {
   border: none;
   width: 200px;
   height: 40px;
   border-radius: 5px;
   background-color:green;
+  color: white;
+  font-weight: bold;
+  /* text-decoration: bold; */
+  /* text-decoration: none; */
+  margin-bottom: 10px;
+}
+
+.email-contact-button {
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color:rgb(112, 173, 22);
   color: white;
   font-weight: bold;
   /* text-decoration: bold; */
