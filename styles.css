@@ -218,6 +218,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  z-index: 1;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -262,17 +263,7 @@ body {
 
 }
 
-.bottom {
-  background-color: #222;
-  color: grey;
 
-}
-
-.bottom a {
-  text-decoration: none;
-  color: grey;
-  text-decoration:underline;
-}
 
 .call-contact-button {
   border: none;
@@ -319,6 +310,34 @@ button:hover {
   opacity: 0.6;
 }
 
+.bottom {
+  background-color: #222;
+  color: grey;
+
+}
+
+.bottom a {
+  /* text-decoration: none; */
+  color: grey;
+  /* text-decoration:underline; */
+}
+
 #contact {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-link:hover {
+cursor: pointer;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
 }

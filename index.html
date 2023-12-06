@@ -108,7 +108,7 @@
         <div class="mySlides"></div>
 
         <div class="row">
-          <div class="arrow"><img src="images/arrow_back_ios.svg"/></div>
+          <div class="arrow"><img src="images/arrow_back_ios.svg" onclick="plusSlides(-1)"/></div>
           
           <div class="column">
             <img
@@ -177,7 +177,7 @@
 
 
 
-          <div class="arrow"><img src="images/arrow_forward_ios.svg"/></div>
+          <div class="arrow"><img src="images/arrow_forward_ios.svg" onclick="plusSlides(1)"/></div>
         </div>
 
       </div>
@@ -238,14 +238,16 @@
     </div>
 
     <div id="contact" class="section even">
-      <h2>Contact Us and Book a Session</h2>
+<div style="width: 30%;">
+  <h2>Contact Us and Book a Session</h2>
 
-      <p>
-        Ready to take the next step in your math journey? Contact us today and
-        book a session! We're eager to hear from you. Please let us know your
-        availability and any specific topics or areas you'd like to focus on.
-        We'll work together to find the perfect time for your tutoring session.
-      </p>
+  <p>
+    Ready to take the next step in your math journey? Contact us today and
+    book a session! We're eager to hear from you. Please let us know your
+    availability and any specific topics or areas you'd like to focus on.
+    We'll work together to find the perfect time for your tutoring session.
+  </p>
+</div>
 
       <ul style="list-style-type: none; padding-left: 0">
         <li><a href="tel:0849004561"><button class="call-contact-button">Call Us &#x1F4DE</button></a></li>
@@ -272,8 +274,21 @@
       </ul>
     </div>
 
-    <div id="bottom" class="section bottom" >
-      <h2>Get In Touch With Us</h2>
+    <div id="bottom" class="section bottom" style="display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+      <div style="display: flex; flex-direction: column;">
+        <p><a href="tel:0849004561" class="contact-link">Tel: 0849004561</a></p>
+      <a href="mailto:oona@feelthelearn.co.za?subject=Interested%20in%20Tutoring" class="contact-link">Email: oona@feelthelearn.co.za</a></div>
+      <div>
+        
+        <div >
+          <img src="images/facebook_outline.png" style="width: 40px;" class="social-link"/>
+          <img src="images/instagram_outline.png" style="width: 40px;" class="social-link"/>
+          <img src="images/tik-tok_outline.png" style="width: 40px;" class="social-link"/>
+          <img src="images/whatsapp_outline.png" style="width: 40px;" class="social-link"/>
+        </div>
+      
+      </div>
+      
 
       <!-- <p>
         Ready to take the next step in your math journey? Contact us today and
@@ -282,10 +297,8 @@
         We'll work together to find the perfect time for your tutoring session.
       </p> -->
 
-      <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: row; justify-content: space-around;">
-        <li><button class="call-contact-button">Call Us &#x1F4DE</button></li>
-        <li><button class="whatsapp-contact-button">WhatsApp Us &#x1F4F1</button></li>
-        <li><button class="email-contact-button">Email Us &#x1F4E8</button></li>
+      <!-- <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: row; justify-content: space-around;"> -->
+
         <!-- <li>Call us on <a href="tel:0849004561">0849004561</a></li> -->
         <!-- <li style="display: flex; align-items: center">
           <p style="margin-right: 5px">Contact us on</p>
@@ -313,7 +326,7 @@
             >tutor.feelthelearn@gmail.com</a
           >
         </li> -->
-      </ul>
+      <!-- </ul> -->
     </div>
 
     <script src="script.js"></script>
