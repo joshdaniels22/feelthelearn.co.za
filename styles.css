@@ -4,9 +4,6 @@ html {
 
 * {
   font-family: "Montserrat", sans-serif;
-  /* font-family: 'Bebas Neue', sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 body {
   margin: 0;
@@ -27,12 +24,9 @@ body {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  /* padding-bottom: 0;
-  padding-top: 0; */
 }
 
 .top-right {
-  /* text-align: right; */
   margin: 0;
   padding: 0;
   border-radius: 20%;
@@ -60,16 +54,9 @@ body {
   text-align: left;
 }
 
-/* .section > .odd {
-  text-align: center;
-} */
-
 .contact-button {
   display: inline;
-  /* margin-left: auto;
-  margin-right: auto; */
   width: 32px;
-  /* vertical-align: ; */
 }
 
 * {
@@ -80,22 +67,14 @@ body {
   vertical-align: middle;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
 }
 
-/* Hide the images by default */
-/* .mySlides > img {
-  display: none;
-} */
-
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -112,19 +91,16 @@ body {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -133,7 +109,6 @@ body {
   top: 0;
 }
 
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -154,19 +129,12 @@ body {
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
-  /* border-radius: 20%; */
   float: left;
   width: 20%;
 }
 
 .arrow {
-  /* width: 9%; */
-
-  /* float: left; */
-
-  /* height: 100%; */
   text-align: center;
   vertical-align: middle;
   width: 9%;
@@ -177,21 +145,13 @@ body {
   cursor: pointer;
 }
 
-/* .left {
-  rotate: 180deg;;
-} */
-
 .arrow img {
   height: 30px;
-  /* vertical-align: middle; */
 }
 
 .column img {
   border-radius: 10%;
   padding: 10px;
-  /* height: 200px; */
-  /* object-fit: cover; */
-  /* object-position: 50% 30%; */
 }
 
 #tutors {
@@ -199,10 +159,8 @@ body {
   width: 100%;
 
   height: 680px;
-  /* overflow: scroll; */
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -229,20 +187,14 @@ body {
 
 .top-bar-items {
   display: flex;
-  /* justify-content: space-around; */
   margin: 0;
   margin-left: 65px;
   padding: 0;
   list-style-type: none;
-  /* justify-content: ; */
   float: left;
-  /* width: 90%; */
   list-style-type: none;
-
   overflow: hidden;
   background-color: orange;
-
-  /* width: 100%; */
 }
 
 .topbar-item {
@@ -253,12 +205,10 @@ body {
   text-align: center;
   margin: 0px 16px;
   padding: 14px 20px;
-  /* marg */
   text-decoration: none;
 }
 .topbar-item:hover {
   background-color: #222;
-  /* border-radius: 10%; */
 }
 
 .call-contact-button {
@@ -270,8 +220,6 @@ body {
   background-color: cornflowerblue;
   color: white;
   font-weight: bold;
-  /* text-decoration: bold; */
-  /* text-decoration: none; */
   margin-bottom: 40px;
   box-shadow: 5px 5px lightblue;
 }
@@ -284,8 +232,6 @@ body {
   background-color: green;
   color: white;
   font-weight: bold;
-  /* text-decoration: bold; */
-  /* text-decoration: none; */
   margin-bottom: 40px;
   box-shadow: 5px 5px lightblue;
 }
@@ -298,8 +244,6 @@ body {
   background-color: rgb(112, 173, 22);
   color: white;
   font-weight: bold;
-  /* text-decoration: bold; */
-  /* text-decoration: none; */
   margin-bottom: 40px;
   box-shadow: 5px 5px lightblue;
 }
@@ -307,18 +251,11 @@ body {
 button:hover {
   box-shadow: 10px 10px lightblue;
   cursor: pointer;
-  /* opacity: 0.6; */
 }
 
 .bottom {
   background-color: #222;
   color: grey;
-}
-
-.bottom a {
-  /* text-decoration: none; */
-  /* color: grey; */
-  /* text-decoration:underline; */
 }
 
 #contact {
@@ -331,7 +268,6 @@ button:hover {
 
 .social-link:hover {
   cursor: pointer;
-  /* filter: brightness(250%); */
 }
 
 .contact-link {
@@ -345,27 +281,17 @@ button:hover {
 
 .top-socials-section {
   margin-right: 90px;
-  /* vertical-align: center; */
-  /* width: 2%; */
-  /* width: ; */
 }
 
 .social-link-top {
   margin: 14px 20px;
   padding: 0px 0px;
-  /* font-size: 20px; */
-  /* height: 30px; */
-  /* width: 30px; */
-
   text-decoration: none;
-
   color: white;
 }
 
 .social-link-top:hover {
   text-decoration: underline;
-  /* background-color: none; */
-  /* box-shadow: 5px 5px 5px grey; */
 }
 
 .social-link {
@@ -381,9 +307,6 @@ button:hover {
 }
 
 .social-link:hover {
-  /* opacity: 0.7; */
-  /* text-shadow: 5px 5px white;
-     */
   box-shadow: 10px 10px lightblue;
 }
 
@@ -394,7 +317,6 @@ button:hover {
 
 .fa-instagram {
   background-image: linear-gradient(to top right, #f9ce34, #ee2a7b, #6228d7);
-  /* background-color: red; */
 }
 
 .fa-whatsapp {
@@ -408,14 +330,11 @@ button:hover {
 }
 
 .in-top {
-  /* background-image: linear-gradient(to top right, #f9ce34, #ee2a7b, #6228d7); */
-  /* background-color: red; */
   background: none;
   color: white;
 }
 
 .wa-top {
-  /* background: #25D366; */
   background: none;
   color: white;
 }
