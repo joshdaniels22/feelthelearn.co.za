@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,11 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <div class="topbar">
-      <ul class="top-bar-items"u
+      <ul class="top-bar-items">
         <li><a href="#home" class="topbar-item">Home</a></li>
         <li><a href="#about" class="topbar-item">About Us</a></li>
         <li><a href="#pricing" class="topbar-item">Pricing</a></li>
@@ -126,6 +127,7 @@
         <div class="mySlides"></div>
         <div class="mySlides"></div>
         <div class="mySlides"></div>
+        <div class="mySlides"></div>
 
         <div class="row">
           <div class="arrow">
@@ -169,8 +171,15 @@
             />
           </div>
 
-          <div class="column" style="display: none">
-            <img src="images/stock_headshot_1.jpg" style="width: 100%" />
+          <div class="column">
+            <img 
+            class="demo cursor"
+            src="images/stock_headshot_1.jpg" 
+            style="width: 100%" 
+            onclick="currentSlide(5)"
+            alt="Sahrah"
+            
+            />
           </div>
 
           <div class="column" style="display: none">
@@ -191,9 +200,6 @@
         <h3>Hi Karabo</h3>
         <i class="fas fa-cloud"></i>
         <p>
-          <!-- <i class="fa-thin fa-arrow-right fa-beat-fade fa-2xs" >asdf</i> -->
-          <!-- <i class="material-icons">arrow</i> -->
-
           "I am in my first year of a BSc in Computer Science and Computer
           Engineering at UCT. After completing my degree, I plan to leverage the
           technical expertise, problem-solving, and innovative thinking gained
@@ -238,6 +244,14 @@
           understanding."
         </p>
       </div>
+
+
+      <div class="bio">
+        <h3>Meet Sahrah</h3>
+        <p>
+          "xxx"
+        </p>
+      </div>
     </div>
 
     <div id="contact" class="section even">
@@ -271,7 +285,6 @@
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
               />
             </button>
-            <!-- &#x1F4F1 -->
           </a>
         </li>
         <li>
@@ -317,44 +330,6 @@
           <a href="#" class="fa social-link fa-brands fa-whatsapp"></a>
         </div>
       </div>
-
-      <!-- <p>
-        Ready to take the next step in your math journey? Contact us today and
-        book a session! We're eager to hear from you. Please let us know your
-        availability and any specific topics or areas you'd like to focus on.
-        We'll work together to find the perfect time for your tutoring session.
-      </p> -->
-
-      <!-- <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: row; justify-content: space-around;"> -->
-
-      <!-- <li>Call us on <a href="tel:0849004561">0849004561</a></li> -->
-      <!-- <li style="display: flex; align-items: center">
-          <p style="margin-right: 5px">Contact us on</p>
-          <a
-            style="margin-right: 5px"
-            href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
-          >
-            WhatsApp
-          </a>
-          <a
-            class="contact-button"
-            href="https://wa.me/27849004561?text=Hi%20there.%20I'm%20interested%20in%20tutoring%20at%20Feel%20The%20Learn."
-          >
-            <img
-              style="width: 32px"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/128px-WhatsApp_icon.png"
-          /></a>
-        </li>
-
-        <li>
-          Email us at
-          <a
-            style="display: inline"
-            href="mailto:tutor.feelthelearn@gmail.com?subject=Interested%20in%20Tutoring"
-            >tutor.feelthelearn@gmail.com</a
-          >
-        </li> -->
-      <!-- </ul> -->
     </div>
     <script src="script.js"></script>
   </body>
