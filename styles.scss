@@ -1,293 +1,301 @@
+$standard-opacity: 0.6;
+$whatsapp-green: #25d366;
+
 html {
-    scroll-behavior: smooth; }
-  
-  * {
-    font-family: "Montserrat", sans-serif; }
-  
-  body {
-    margin: 0; }
-  
-  .section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px 100px; }
-  
-  .section.top {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    flex-direction: row;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px; }
-  
-  .top-right {
-    margin: 0;
-    padding: 0;
-    border-radius: 20%; }
-  
-  .top-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  
-  .section.odd {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    flex-direction: column;
-    text-align: left; }
-  
-  .section.even {
-    display: flex;
-    justify-content: center;
-    background-color: #ffd580;
-    flex-direction: column;
-    text-align: left; }
-  
-  .contact-button {
-    display: inline;
-    width: 32px; }
-  
-  * {
-    box-sizing: border-box; }
-  
-  .tutor {
-    vertical-align: middle; }
-  
-  .container {
-    position: relative; }
-  
-  .cursor {
-    cursor: pointer; }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none; }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px; }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); }
-  
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0; }
-  
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white; }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-  
-  .row:after {
-    content: "";
-    display: flex;
-    clear: both; }
-  
-  .column {
-    float: left;
-    width: 20%; }
-  
-  .arrow {
-    text-align: center;
-    vertical-align: middle;
-    width: 9%; }
-  
-  .arrow:hover {
-    opacity: 0.6;
-    cursor: pointer; }
-  
-  .arrow img {
-    height: 30px; }
-  
-  .column img {
-    border-radius: 10%;
-    padding: 10px; }
-  
-  #tutors {
-    display: block;
-    width: 100%;
-    height: 680px; }
-  
-  .demo {
-    opacity: 0.6; }
-  
-  .active,
-  .demo:hover {
-    opacity: 1; }
-  
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: orange;
-    overflow: hidden;
-    list-style-type: none; }
-  
-  .top-bar-items {
-    display: flex;
-    margin: 0;
-    margin-left: 65px;
-    padding: 0;
-    list-style-type: none;
-    float: left;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: orange; }
-  
-  .topbar-item {
-    float: left;
-    display: block;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin: 0px 16px;
-    padding: 14px 20px;
-    text-decoration: none; }
-  
-  .topbar-item:hover {
-    background-color: #222; }
-  
-  .call-contact-button {
-    border: none;
-    width: 400px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: cornflowerblue;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 40px;
-    box-shadow: 5px 5px lightblue;
-  }
-  
-  .whatsapp-contact-button {
-    border: none;
-    width: 400px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 40px;
-    box-shadow: 5px 5px lightblue;
-  }
-  
-  .email-contact-button {
-    border: none;
-    width: 400px;
-    height: 60px;
-    border-radius: 5px;
-    background-color: #315B7D;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 40px;
-    box-shadow: 5px 5px lightblue;
-  }
-  
-  button:hover {
-    box-shadow: 10px 10px white;
-    cursor: pointer; }
-  
-  .bottom {
-    background-color: #222;
-    color: grey; }
-  
-  #contact {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-  
-  .social-link:hover {
-    cursor: pointer; }
-  
-  .contact-link {
-    text-decoration: none;
-    color: white; }
-  
-  .contact-link:hover {
-    text-decoration: underline; }
-  
-  .top-socials-section {
-    margin-right: 90px; }
-  
-  .social-link-top {
-    margin: 14px 20px;
-    padding: 0px 0px;
-    text-decoration: none;
-    color: white; }
-  
-  .social-link-top:hover {
-    text-decoration: underline; }
-  
-  .social-link {
-    padding: 20px;
-    font-size: 70px;
-    width: 70px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 5px 5px lightblue; }
-  
-  .social-link:hover {
-    box-shadow: 10px 10px lightblue; }
-  
-  .fa-facebook {
-    background: #3b5998;
-    color: white; }
-  
-  .fa-instagram {
-    background-image: linear-gradient(to top right, #f9ce34, #ee2a7b, #6228d7); }
-  
-  .fa-whatsapp {
-    background: #25d366;
-    color: white; }
-  
-  .fb-top {
-    background: none;
-    color: white; }
-  
-  .in-top {
-    background: none;
-    color: white; }
-  
-  .wa-top {
-    background: none;
-    color: white; }
-  
-  /*# sourceMappingURL=styles.css.map */
-  
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+%section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+
+#home {
+  @extend %section;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.odd {
+  @extend %section;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  flex-direction: column;
+  text-align: left;
+}
+
+.even {
+  @extend %section;
+  display: flex;
+  justify-content: center;
+  background-color: #ffd580;
+  flex-direction: column;
+  text-align: left;
+}
+
+#bottom {
+  @extend %section;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  color: grey;
+}
+
+#tutors {
+  display: block;
+  width: 100%;
+  height: 680px;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-right {
+  margin: 0;
+  padding: 0;
+  border-radius: 20%;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-button {
+  display: inline;
+  width: 32px;
+}
+
+.container {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+.arrow {
+  text-align: center;
+  vertical-align: middle;
+  width: 9%;
+}
+
+.arrow:hover {
+  opacity: $standard-opacity;
+  cursor: pointer;
+}
+
+.arrow img {
+  height: 30px;
+}
+
+.column img {
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.demo {
+  opacity: $standard-opacity;
+  cursor: pointer;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: orange;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.section-links {
+  display: flex;
+  margin: 0;
+  margin-left: 65px;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: orange;
+}
+
+.topbar-item {
+  float: left;
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 16px;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.topbar-item:hover {
+  background-color: #222;
+}
+
+%contact-button {
+  border: none;
+  width: 400px;
+  height: 60px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px lightblue;
+}
+
+%contact-button:hover {
+  box-shadow: 10px 10px lightblue;
+  cursor: pointer;
+}
+
+.call-contact-button {
+  @extend %contact-button;
+  background-color: cornflowerblue;
+}
+
+.whatsapp-contact-button {
+  @extend %contact-button;
+  background-color: green;
+}
+
+.email-contact-button {
+  @extend %contact-button;
+  background-color: #315b7d;
+}
+
+.social-link:hover {
+  cursor: pointer;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-link:hover,
+.social-link-top:hover {
+  text-decoration: underline;
+}
+
+.top-socials-section {
+  margin-right: 90px;
+}
+
+.social-link-items {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  justify-content: space-evenly;
+}
+
+.social-link-top {
+  margin: 14px 20px;
+  padding: 0px 0px;
+  text-decoration: none;
+  color: white;
+}
+
+.social-link {
+  padding: 20px;
+  font-size: 70px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px lightblue;
+}
+
+.social-link:hover {
+  box-shadow: 10px 10px lightblue;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background-image: linear-gradient(to top right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.fa-whatsapp {
+  background: $whatsapp-green;
+  color: white;
+}
+
+.fb-top {
+  background: none;
+  color: white;
+}
+
+.in-top {
+  background: none;
+  color: white;
+}
+
+.wa-top {
+  background: none;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
