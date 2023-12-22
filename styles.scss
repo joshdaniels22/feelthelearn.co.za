@@ -156,6 +156,7 @@ body {
   background-color: orange;
   overflow: hidden;
   list-style-type: none;
+  box-shadow: 0 8px 6px -6px gray;
 }
 
 .section-links {
@@ -213,6 +214,12 @@ body {
 
 .email-contact-button {
   @extend %contact-button;
+  background-color: #315b7d;
+}
+
+.contact-section-button {
+  @extend %contact-button;
+  width: 300px;
   background-color: #315b7d;
 }
 
@@ -296,6 +303,35 @@ body {
 .wa-top {
   background: none;
   color: white;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  background-color: #222;
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: grey;
+}
+
+.review-card {
+  // width: 5px;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 40px;
+  // background-color: rgb(214, 213, 213);
+  background-color: white;
+  box-shadow: 8px 8px 6px -6px gray;
+}
+
+.slider-with-arrows {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-slider {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -149,6 +149,7 @@ body {
   background-color: orange;
   overflow: hidden;
   list-style-type: none;
+  box-shadow: 0 8px 6px -6px gray;
 }
 
 .section-links {
@@ -178,7 +179,7 @@ body {
   background-color: #222;
 }
 
-.email-contact-button, .whatsapp-contact-button, .call-contact-button {
+.contact-section-button, .email-contact-button, .whatsapp-contact-button, .call-contact-button {
   border: none;
   width: 400px;
   height: 60px;
@@ -189,7 +190,7 @@ body {
   box-shadow: 5px 5px lightblue;
 }
 
-.email-contact-button:hover, .whatsapp-contact-button:hover, .call-contact-button:hover {
+.contact-section-button:hover, .email-contact-button:hover, .whatsapp-contact-button:hover, .call-contact-button:hover {
   box-shadow: 10px 10px lightblue;
   cursor: pointer;
 }
@@ -203,6 +204,11 @@ body {
 }
 
 .email-contact-button {
+  background-color: #315b7d;
+}
+
+.contact-section-button {
+  width: 300px;
   background-color: #315b7d;
 }
 
@@ -286,6 +292,33 @@ body {
 .wa-top {
   background: none;
   color: white;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  background-color: #222;
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: grey;
+}
+
+.review-card {
+  padding: 40px;
+  margin: 40px;
+  border-radius: 40px;
+  background-color: white;
+  box-shadow: 8px 8px 6px -6px gray;
+}
+
+.slider-with-arrows {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-slider {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
