@@ -316,22 +316,49 @@ body {
 }
 
 .review-card {
-  // width: 5px;
   padding: 40px;
   margin: 40px;
   border-radius: 40px;
-  // background-color: rgb(214, 213, 213);
   background-color: white;
   box-shadow: 8px 8px 6px -6px gray;
 }
 
-.slider-with-arrows {
-  display: flex;
-  flex-direction: row;
+.review-card:hover {
+  cursor: pointer;
 }
 
 .my-slider {
   width: 80%;
+}
+
+%scroll-buttons {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66CCFF;
+  border-radius: 3px;
+  border: 0;
+  text-align: center; margin-bottom: 10px;
+}
+
+%scroll-buttons:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px gray;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.previous {
+  @extend %scroll-buttons;
+}
+
+.next {
+  @extend %scroll-buttons;
 }
 
 /*# sourceMappingURL=styles.css.map */

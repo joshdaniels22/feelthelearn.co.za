@@ -101,50 +101,49 @@
   <div id="testimonials" class="even">
     <h2>Testimonials</h2>
     <div class="slider-with-arrows">
-  <div class="controls">
-    <button class="previous">left</button>
-    <button class="next">right</button>
-
-  </div>
-    <div class="my-slider">
-      <div class="review-card">
-        <h2>Jessica</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
+      <div class="controls">
+        <button class="previous">left</button>
+        <button class="next">right</button>
       </div>
-      <div class="review-card">
-        <h2>John</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
-      </div>
-      <div class="review-card">
-        <h2>Sahrah</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
-      </div>
-      <div class="review-card">
-        <h2>Kevin</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
-      </div>
-      <div class="review-card">
-        <h2>Brian</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
-      </div>
-      <div class="review-card">
-        <h2>Sandy</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
-          libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
-          iste non.</p>
+      <div class="my-slider">
+        <div class="review-card">
+          <h2>Jessica</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
+        <div class="review-card">
+          <h2>John</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
+        <div class="review-card">
+          <h2>Sahrah</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
+        <div class="review-card">
+          <h2>Kevin</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
+        <div class="review-card">
+          <h2>Brian</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
+        <div class="review-card">
+          <h2>Sandy</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eius? Magnam at provident minima, inventore
+            libero voluptates esse praesentium. Voluptas animi minus assumenda nemo necessitatibus obcaecati quaerat ea
+            iste non.</p>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <div id="tutors" class="odd">
@@ -162,8 +161,7 @@
         </div>
 
         <div class="column">
-          <img class="demo" src="images/Karabo.jpeg" style="width: 100%" onclick="currentSlide(1)"
-            alt="Karabo" />
+          <img class="demo" src="images/Karabo.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="Karabo" />
         </div>
         <div class="column">
           <img class="demo" src="images/Cropped_3l4_Mduduzi.jpeg" style="width: 100%" onclick="currentSlide(2)"
@@ -303,6 +301,8 @@
       swipeAngle: false,
       speed: 400,
       controlsContainer: '.controls',
+      nav: false,
+      "mouseDrag": true,
       prevButton: '.previous',
       nextButton: '.next',
     });

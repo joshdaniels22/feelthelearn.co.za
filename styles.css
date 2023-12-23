@@ -312,13 +312,35 @@ body {
   box-shadow: 8px 8px 6px -6px gray;
 }
 
-.slider-with-arrows {
-  display: flex;
-  flex-direction: row;
+.review-card:hover {
+  cursor: pointer;
 }
 
 .my-slider {
   width: 80%;
+}
+
+.next, .previous {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66CCFF;
+  border-radius: 3px;
+  border: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.next:hover, .previous:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px gray;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
