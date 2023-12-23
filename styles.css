@@ -102,8 +102,8 @@ body {
 }
 
 .column {
-  float: left;
-  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .arrow {
@@ -123,7 +123,8 @@ body {
 
 .column img {
   border-radius: 10%;
-  padding: 10px;
+  margin-left: 20px;
+  box-shadow: 0 8px 6px -6px gray;
 }
 
 .demo {
@@ -320,7 +321,7 @@ body {
   width: 80%;
 }
 
-.next, .previous {
+.picture-next, .picture-previous, .next, .previous {
   font-size: 15px;
   margin: 0 5px;
   padding: 0 1em;
@@ -333,7 +334,7 @@ body {
   margin-bottom: 10px;
 }
 
-.next:hover, .previous:hover {
+.picture-next:hover, .picture-previous:hover, .next:hover, .previous:hover {
   cursor: pointer;
   box-shadow: 0 8px 6px -6px gray;
 }
@@ -341,6 +342,15 @@ body {
 .controls {
   display: flex;
   justify-content: center;
+}
+
+.picture-controls {
+  display: flex;
+  justify-content: center;
+}
+
+#contact div p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

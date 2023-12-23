@@ -109,8 +109,8 @@ body {
 }
 
 .column {
-  float: left;
-  width: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .arrow {
@@ -130,7 +130,8 @@ body {
 
 .column img {
   border-radius: 10%;
-  padding: 10px;
+  margin-left: 20px;
+  box-shadow: 0 8px 6px -6px gray;
 }
 
 .demo {
@@ -340,7 +341,8 @@ body {
   background: #66CCFF;
   border-radius: 3px;
   border: 0;
-  text-align: center; margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 %scroll-buttons:hover {
@@ -359,6 +361,23 @@ body {
 
 .next {
   @extend %scroll-buttons;
+}
+
+.picture-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.picture-previous {
+  @extend %scroll-buttons;
+}
+
+.picture-next {
+  @extend %scroll-buttons;
+}
+
+#contact div p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

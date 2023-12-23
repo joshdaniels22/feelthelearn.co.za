@@ -78,22 +78,27 @@
     </p>
     <ul style="list-style-type: none">
       <li style="margin-bottom: 20px">
-        <b>Two-Hour Sessions:</b> We understand that one hour can sometimes be
-        too short to dive deep into the complexities of mathematics. That's
-        why we exclusively offer two-hour tutoring sessions, ensuring ample
-        time for comprehensive learning and problem-solving.
+        <h3>Two-Hour Sessions</h3>
+        <p>We understand that one hour can sometimes be
+          too short to dive deep into the complexities of mathematics. That's
+          why we exclusively offer two-hour tutoring sessions, ensuring ample
+          time for comprehensive learning and problem-solving.</p>
       </li>
       <li style="margin-bottom: 20px">
-        <b>Session Rate:</b> Our pricing is straightforward and competitive.
-        We charge R250 per hour, totaling R500 for a two-hour session to
-        provide you with the best value for your investment in your education.
+        <h3>Session Rate</h3>
+        <p>Our pricing is straightforward and competitive.
+          We charge R250 per hour, totaling R500 for a two-hour session to
+          provide you with the best value for your investment in your education.</p>
       </li>
       <li>
-        <b>Travel Fee (if applicable):</b> For students residing outside the
-        main Cape Town area, a nominal petrol/travel fee may apply. This fee
-        helps compensate our dedicated tutors for their travel time and
-        expenses while ensuring that quality tutoring is accessible to
-        everyone.
+        <h3>Travel Fee (if applicable)</h3>
+        <p>
+          For students residing outside the
+          main Cape Town area, a nominal petrol/travel fee may apply. This fee
+          helps compensate our dedicated tutors for their travel time and
+          expenses while ensuring that quality tutoring is accessible to
+          everyone.
+        </p>
       </li>
     </ul>
   </div>
@@ -149,48 +154,48 @@
   <div id="tutors" class="odd">
     <h2 style="margin-bottom: 40px">Our Tutors</h2>
 
+    <div class="picture-controls">
+      <button class="picture-previous">left</button>
+      <button class="picture-next">right</button>
+    </div>
+
     <div class="container">
-      <div class="mySlides"></div>
-      <div class="mySlides"></div>
-      <div class="mySlides"></div>
-      <div class="mySlides"></div>
-
       <div class="row">
-        <div class="arrow">
+        <!-- <div class="arrow">
           <img src="images/arrow_back_ios.svg" onclick="plusSlides(-1)" />
-        </div>
+        </div> -->
 
         <div class="column">
-          <img class="demo" src="images/Karabo.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="Karabo" />
+          <img class="demo" src="images/Karabo.jpeg" style="width: 100%" onclick="showCaptionForSlide(1)" />
         </div>
         <div class="column">
-          <img class="demo" src="images/Cropped_3l4_Mduduzi.jpeg" style="width: 100%" onclick="currentSlide(2)"
+          <img class="demo" src="images/Cropped_3l4_Mduduzi.jpeg" style="width: 100%" onclick="showCaptionForSlide(2)"
             alt="Mduduzi" />
         </div>
         <div class="column">
-          <img class="demo" src="images/Cropped_3l4_Olwethu.jpeg" style="width: 100%" onclick="currentSlide(3)"
+          <img class="demo" src="images/Cropped_3l4_Olwethu.jpeg" style="width: 100%" onclick="showCaptionForSlide(3)"
             alt="Olwethu" />
         </div>
         <div class="column">
-          <img class="demo" src="images/Cropped_3l4_Qaasim.jpeg" style="width: 100%" onclick="currentSlide(4)"
+          <img class="demo" src="images/Cropped_3l4_Qaasim.jpeg" style="width: 100%" onclick="showCaptionForSlide(4)"
             alt="Qaasim" />
         </div>
 
-        <div class="column" style="display: none">
-          <img src="images/stock_headshot_1.jpg" style="width: 100%" />
+        <div class="column">
+          <img class="demo" src="images/stock_headshot_1.jpg" style="width: 100%" onclick="showCaptionForSlide(5)" />
         </div>
 
-        <div class="column" style="display: none">
-          <img src="images/stock_headshot_2.jpg" style="width: 100%" />
+        <div class="column">
+          <img class="demo" src="images/stock_headshot_2.jpg" style="width: 100%" onclick="showCaptionForSlide(6)" />
         </div>
 
-        <div class="column" style="display: none">
-          <img src="images/stock_headshot_3.jpg" style="width: 100%" />
+        <div class="column">
+          <img class="demo" src="images/stock_headshot_3.jpg" style="width: 100%" onclick="showCaptionForSlide(7)" />
         </div>
 
-        <div class="arrow">
+        <!-- <div class="arrow">
           <img src="images/arrow_forward_ios.svg" onclick="plusSlides(1)" />
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -241,18 +246,51 @@
         understanding."
       </p>
     </div>
+    <div class="bio">
+      <h3>Hi Melissa</h3>
+      <p>
+        "I am presently pursuing a Bachelor of Science in Pure and Applied
+        Mathematics. My future plan involves becoming a lecturer at UCT. What
+        truly brings me joy is sharing my knowledge with others and knowing
+        that I've played a part in helping someone gain a deeper
+        understanding."
+      </p>
+    </div>
+    <div class="bio">
+      <h3>Meet Lorna</h3>
+      <p>
+        "I am presently pursuing a Bachelor of Science in Pure and Applied
+        Mathematics. My future plan involves becoming a lecturer at UCT. What
+        truly brings me joy is sharing my knowledge with others and knowing
+        that I've played a part in helping someone gain a deeper
+        understanding."
+      </p>
+    </div>
+    <div class="bio">
+      <h3>Hi Maria</h3>
+      <p>
+        "I am presently pursuing a Bachelor of Science in Pure and Applied
+        Mathematics. My future plan involves becoming a lecturer at UCT. What
+        truly brings me joy is sharing my knowledge with others and knowing
+        that I've played a part in helping someone gain a deeper
+        understanding."
+      </p>
+    </div>
+
   </div>
 
   <div id="contact" class="even">
     <div style="width: 30%">
       <h2>Contact Us and Book a Session</h2>
       <p>
-        Ready to take the next step in your math journey? Contact us today and
-        book a session! We're eager to hear from you. Please let us know your
+        Ready to take the next step in your math journey?
+      </p>
+      <p>Contact us today and
+        book a session! </p>
+      <p>We're eager to hear from you. Please let us know your
         availability and any specific topics or areas you'd like to focus on.
         We'll work together to find the perfect time for your tutoring
-        session.
-      </p>
+        session.</p>
     </div>
 
     <ul style="list-style-type: none; padding-left: 0">
@@ -305,6 +343,20 @@
       "mouseDrag": true,
       prevButton: '.previous',
       nextButton: '.next',
+    });
+  </script>
+  <script>
+    var slider = tns({
+      container: ".row",
+      items: 3,
+      fixedWidth: 200,
+      swipeAngle: false,
+      speed: 400,
+      controlsContainer: '.picture-controls',
+      nav: false,
+      "mouseDrag": true,
+      prevButton: '.picture-previous',
+      nextButton: '.picture-next',
     });
   </script>
 </body>
